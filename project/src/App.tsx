@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Toaster } from 'react-hot-toast';
-import { AlertTriangle, Vote, Info } from 'lucide-react';
+import { AlertTriangle, Vote } from 'lucide-react';
 import WalletConnect from './components/WalletConnect';
 import AdminPanel from './components/AdminPanel';
 import VotingPanel from './components/VotingPanel';
@@ -10,7 +10,6 @@ import { useVoting } from './hooks/useVoting';
 
 function App() {
   const [contractAddress] = useState<string>('0x92859261aFE2d31b3321D3db8686A87D1B141468');
-  const [showContractInput] = useState<boolean>(false);
   
   const {
     isConnected,
