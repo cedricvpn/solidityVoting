@@ -7,6 +7,7 @@ import VotingPanel from './components/VotingPanel';
 import ResultsPanel from './components/ResultsPanel';
 import { useWallet } from './hooks/useWallet';
 import { useVoting } from './hooks/useVoting';
+import Footer from './components/Footer';
 
 function App() {
   const [contractAddress] = useState<string>('0x92859261aFE2d31b3321D3db8686A87D1B141468');
@@ -142,6 +143,7 @@ function App() {
           },
         }}
       />
+      <Footer />
     </div>
   );
 }
