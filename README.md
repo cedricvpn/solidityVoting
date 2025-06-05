@@ -1,0 +1,2 @@
+# solidityVoting
+ simple voting platform 
